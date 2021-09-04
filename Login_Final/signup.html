@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no">
+    <script>
+        function myFunction(){
+            var x = document.getElementById('name').value;
+            console.log(x);
+            var y = document.getElementById('email').value;
+            console.log(y);
+            var z = document.getElementById('pwd').value;
+            console.log(z);
+        }
+    </script>
+    <style>
+    div{
+        width: 300;
+        background-color: #262626;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:whitesmoke;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    input{
+        height: 20px;
+        width: 200px;
+        background-color: #262626;
+        border-color: lightgray;
+        border-radius: 5px;
+        border-width: 1px;
+        color: whitesmoke;
+        margin-bottom: 5px;
+    }
+    #box1{
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+    #button{
+        background: -webkit-linear-gradient(left, rgb(212, 0, 255) , blue);
+        background: -o-linear-gradient(right, rgb(212, 0, 255), blue); 
+        background: -moz-linear-gradient(right, rgb(212, 0, 255), blue);
+        background: linear-gradient(to right, rgb(212, 0, 255) , blue);
+        height:30px;
+        width: 180px;
+        border-width: 0px;
+        text-align:center;
+        margin-bottom: 10px;
+        margin-top: 25px;
+        color: whitesmoke;
+    }
+    img{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    a:link {color:whitesmoke}
+    a:hover {color:cyan}
+    a:visited {color: cyan}
+    </style>
+    <title>Sign up Webpage</title>
+</head>
+<body background="wallpaperflare.com_wallpaper.jpg">
+    <center>
+    <div id="box1">
+        <img src="csi-logo.png" width="75" height="75">
+        <h1>Sign up</h1>
+
+        <input type="text" id="name" placeholder="Name"><br /><br />
+        <input type="email" id="email" placeholder="Email"><br /><br />
+        <input type="password" id="pwd" placeholder="Password"><br /><br />
+        <input type="button" id="button" onclick="myFunction()" value="Sign up">
+    </div>
+    <div id="box3">
+        <a href="google.com" alt="Sign up through google"><img src="instagram-128.png" width="25" height="25"></a>
+        <a href="facebook.com" alt="Sign up through facebook"><img src="facebook-3-128.png" width="25" height="25"></a>
+        <a href="twitter.com" alt="Sign up through twitter"><img src="twitter-128.png" width="25" height ="25"></a>
+    </div>
+    <div id="box4">
+        Already a user? <a href="main.html">Login here.</a>
+    </div>
+    </center>
+</body>
+</html>
